@@ -8,17 +8,7 @@ import {auth, db} from './firebase'
 
 function App() {
   
-  //Key id hook
-  //const [id, setId] = useState(0);
-  //react-firebase-hook for user login
   const [user] = useAuthState(auth);
-
-  // const messageSetter = (input) => {
-  //   setId(id+1);
-  //   const newObj = {id , input};
-  //   setMessages([...messages, newObj]);
-  // }
-
 
   return (
     <div className='messenger'>

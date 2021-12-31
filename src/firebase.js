@@ -1,4 +1,4 @@
-import firebase from 'firebase/compat/app';
+import firebase from 'firebase/compat/app';  // Firebase v9
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 
