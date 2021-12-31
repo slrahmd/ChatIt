@@ -1,0 +1,13 @@
+.messenger{
+    max-width: 600px;
+    height: 90vh;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    background-color: #fff;
+    box-shadow: 5px 5px 12px 3px rgb(0 0 0 / 20%);
+    border-radius: 18px;
+}
+
+h2.top{
+    text-align: center;
+}
