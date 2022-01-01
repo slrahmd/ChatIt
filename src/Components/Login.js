@@ -1,8 +1,9 @@
 import React from 'react'
-import {Button} from '@material-ui/core';
+import LoginIcon from '@mui/icons-material/Login';
 import {auth} from '../firebase';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
+import '../app.css'
 
 const Login = () => {
 
@@ -13,8 +14,8 @@ const Login = () => {
 
     }
     return (
-        <div>
-            <Button onClick={signInWithGoogle}>Sign in with google</Button>
+        <div className='loginPage'>
+            <LoginIcon style={{cursor:'pointer'}} onClick={signInWithGoogle}/>
         </div>
     )
 }

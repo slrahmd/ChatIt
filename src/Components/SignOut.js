@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '@material-ui/core';
+import LogoutIcon from '@mui/icons-material/Logout';
 import {auth} from '../firebase';
 
 
@@ -10,9 +11,8 @@ const SignOut = () => {
     }
     return (
         <div>
-           <Button onClick={signOutFunction}>
-               Sign Out
-           </Button>
+           <LogoutIcon onClick={signOutFunction}>
+           </LogoutIcon>
         </div>
     )
 }

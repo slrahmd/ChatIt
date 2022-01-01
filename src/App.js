@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className='messenger'>
-      <h2 className='top'>Messenger App</h2>
+      <h2 className='top'>Chat</h2>
       <hr></hr>
      {!user ? <Login/> : <Messenger ></Messenger>}
     </div>

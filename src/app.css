@@ -3,12 +3,26 @@
     height: 90vh;
     margin: 0 auto;
     padding: 1.5rem 1.5rem;
-    background-color: #fff;
     box-shadow: 5px 5px 12px 3px rgb(0 0 0 / 20%);
     border-radius: 18px;
     overflow-y: scroll;
+    background: rgb(202,236,10);
+    background: linear-gradient(90deg, rgba(202,236,10,1) 13%, rgba(227,97,89,1) 71%, rgba(77,85,2,1) 100%);
+    
 }
 
+
+
 h2.top{
+    color:#121314;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.loginPage{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    right:50%;
 }
