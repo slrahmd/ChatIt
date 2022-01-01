@@ -38,7 +38,6 @@ const Messenger = () => {
 
     return (
         <div>
-            <SignOut />
             <div className="messages">
                 {
                     messages.map(
