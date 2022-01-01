@@ -1,0 +1,13 @@
+.inputComponent {
+    position:fixed;
+    bottom: 50px;
+    width: 80%;
+    z-index: 1;
+    background-color: #c5c9c9;
+    border-radius: 20px;
+    
+}
+
+.messages {
+}
+
