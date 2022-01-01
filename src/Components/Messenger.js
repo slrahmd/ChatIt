@@ -8,7 +8,7 @@ import { auth, db } from '../firebase'
 import firebase from 'firebase/compat/app';
 import './component.css';
 
-const Messenger = () => {
+const Messenger = ({id, name}) => {
 
     const [input, setInput] = useState("");
     const [messages, setMessages] = useState([]);
@@ -38,13 +38,14 @@ const Messenger = () => {
 
     return (
         <div>
-            <div className="messages">
+            <div className='flexMessages'>
                 {
                     messages.map(
-                        (message) => (<MessageComp key={message.id} text={message.message} />)
+                        (message) => (<MessageComp photoURL={message.photoURL} key={message.id} text={message.message} />)
                     )
                 }
             </div>
+
             <div className='inputComponent'>
                 <form onSubmit={onSubmit}>
                     <FormControl style={{ display: 'flex', justifyContent: 'center', 
@@ -56,7 +57,6 @@ const Messenger = () => {
                         </IconButton>
                     </FormControl>
                 </form>
-
             </div>
         </div>
     )
