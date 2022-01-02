@@ -3,20 +3,33 @@
 .inputComponent {
     bottom: 0;
     position: fixed;
+    height:100px;
     width: 100%;
     background-color: rgba(146, 177, 245, 0.979);
     z-index: 1;
 }
 
+@media only screen and (max-height: 600px) {
+
+  }
+
 .flexMessages {
     display: flex;
     flex-direction: column;
-}
+    overflow: auto;
+    height: calc(100vh - 191px);
 
+}
 .messageIndividual {
     display: flex;
+    flex:1;
     align-items: center;
-    margin:20px
+    margin:20px;
+    justify-content: end;
+}
+
+.messageIndividual.myMessage {
+    justify-content: end;
 }
 
 .messageImage {
@@ -26,12 +39,19 @@
 }
 
 p{
-    margin-left: 10px;
+    margin-right: 10px;
     padding:5px 5px;
     background-color: rgb(67, 78, 228);
     color: white;
     border-radius: 10px;
     max-width: 70%;
     overflow-wrap: break-word;
+}
+
+p.other{
+    background-color: rgb(212, 212, 212);
+    color: black;
+    margin-right: 0px;
+    margin-left: 10px;
 }
 

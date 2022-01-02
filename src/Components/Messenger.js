@@ -41,7 +41,7 @@ const Messenger = ({id, name}) => {
             <div className='flexMessages'>
                 {
                     messages.map(
-                        (message) => (<MessageComp photoURL={message.photoURL} key={message.id} text={message.message} />)
+                        (message) => (<MessageComp uid={id} messageuID={message.uid} photoURL={message.photoURL} key={message.id} text={message.message} />)
                     )
                 }
             </div>
